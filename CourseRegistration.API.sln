@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseRegistration.API", "CourseRegistration.API\CourseRegistration.API.csproj", "{DEBBF1CA-0F4B-4328-BB68-15AD0F7EA572}"
+	ProjectSection(ProjectDependencies) = postProject
+		{00CBB0AC-12C1-4672-8591-0223D7DA3D8A} = {00CBB0AC-12C1-4672-8591-0223D7DA3D8A}
+		{F16743D2-98D5-499F-9DF2-EF87B115CABA} = {F16743D2-98D5-499F-9DF2-EF87B115CABA}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseRegistration.Domain", "CourseRegistration.Domain\CourseRegistration.Domain.csproj", "{F16743D2-98D5-499F-9DF2-EF87B115CABA}"
 EndProject
