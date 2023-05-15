@@ -1,13 +1,14 @@
 ﻿namespace CourseRegistration.Domain {
-    public class CourseRegistration {
+    public class RegistrationFlow {
 
-        public Guid CourseId { get; set; }
+        public Guid Id { get; set; }
         public bool CourseRegistrationOpen { get; set; }
 
         public DateTime RegistrationStartDate { get; set; }
         public DateTime RegistrationEndDate { get; set; }
 
-        public List<RegistrationState> RegistrationState { get; set; }
+        public ICollection<FlowState> FlowStates { get; set; }
 
+        public Guid ExternalCourseId { get; set; }
     }
 }

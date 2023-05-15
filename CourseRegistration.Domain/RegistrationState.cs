@@ -7,23 +7,12 @@ using System.Threading.Tasks;
 namespace CourseRegistration.Domain {
     public class RegistrationState {
 
+        public Guid Id{ get; set; }
         public bool RegistrationOpen { get; set; }
         public int VacantPositionCount { get; set; }
 
-        private List<Participant> participants;
-        public List<Participant> Participants {
+        public ICollection<FlowParticipant> FlowParticipants { get; set; }
+        public ICollection<FlowState> FlowStates { get; set; }
 
-            get {
-                if(this.participants == null) 
-                    return new List<Participant>();
-                else
-                    return this.participants;
-            }
-
-            set {
-                participants = value;
-            }
-
-        }
     }
 }
