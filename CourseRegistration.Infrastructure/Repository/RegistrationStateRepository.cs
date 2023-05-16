@@ -12,28 +12,7 @@ namespace CourseRegistration.Infrastructure.Repository
 
         private readonly DataContext context;
 
-        public Task AddAsync(RegistrationState state) {
-            throw new NotImplementedException();
-        }
 
-        public Task DeleteAsync(Guid idState) {
-            throw new NotImplementedException();
-        }
 
-        public Task<IReadOnlyList<RegistrationState>> GetAllAsync() {
-            throw new NotImplementedException();
-        }
-
-        public Task<RegistrationState> GetByIdAsync(Guid idState) {
-            throw new NotImplementedException();
-        }
-
-        public Task<IReadOnlyList<RegistrationState>> GetByName(string name) {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdateAsync(RegistrationState state) {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace CourseRegistration.Infrastructure.InterfaceRepository {
     internal interface IFlowRepository {
-        public Task AddAsync(RegistrationFlow flow);
-        public Task<IReadOnlyList<RegistrationFlow>> GetAllAsync();
-        public Task<RegistrationFlow> GetByIdAsync(Guid flow);
-        public Task<IReadOnlyList<RegistrationFlow>> GetByName(string name);
-        public Task UpdateAsync(RegistrationFlow flow);
-        public Task DeleteAsync(Guid idFlow);
+        public bool Add(Guid stateId, RegistrationFlow flow);
+        public IReadOnlyList<RegistrationFlow> GetAll();
+        public RegistrationFlow GetById(Guid idFlow);
+        public IReadOnlyList<RegistrationFlow> GetByName(string name);
+        public bool Update(RegistrationFlow flow);
+        public bool Delete(Guid idFlow); 
     }
 }
