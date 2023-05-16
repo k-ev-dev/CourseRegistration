@@ -19,7 +19,6 @@ namespace CourseRegistration.Infrastructure {
         /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
         }*/
 
-        // TODO: implement OnModelCreating
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             modelBuilder.Entity<FlowState>()
                     .HasKey(fs => new { fs.StateId, fs.FlowId});
@@ -28,7 +27,7 @@ namespace CourseRegistration.Infrastructure {
                     .WithMany(pc => pc.FlowStates)
                     .HasForeignKey(p => p.StateId);
             modelBuilder.Entity<FlowState>()
-                    .HasOne(p => p.RegistrationState)
+                    .HasOne(p => p.RegistrationFlow)
                     .WithMany(pc => pc.FlowStates)
                     .HasForeignKey(c => c.FlowId);
 
