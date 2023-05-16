@@ -2,6 +2,7 @@
     public class RegistrationFlow {
 
         public Guid Id { get; set; }
+        public string Name { get; set; }
         public bool CourseRegistrationOpen { get; set; }
 
         public DateTime RegistrationStartDate { get; set; }
