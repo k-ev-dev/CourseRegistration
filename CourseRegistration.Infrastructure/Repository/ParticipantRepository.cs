@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CourseRegistration.Infrastructure.Repository
 {
-    internal class ParticipantRepository : IParticipantRepository {
+    public class ParticipantRepository : IParticipantRepository {
 
         private readonly DataContext context;
 

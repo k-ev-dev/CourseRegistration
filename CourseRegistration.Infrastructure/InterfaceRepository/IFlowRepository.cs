@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CourseRegistration.Infrastructure.InterfaceRepository {
-    internal interface IFlowRepository {
+    public interface IFlowRepository {
         public bool Add(Guid stateId, RegistrationFlow flow);
         public IReadOnlyList<RegistrationFlow> GetAll();
         public RegistrationFlow GetById(Guid idFlow);

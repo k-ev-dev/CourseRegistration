@@ -8,9 +8,32 @@ using System.Threading.Tasks;
 
 namespace CourseRegistration.Infrastructure.Repository
 {
-    internal class FlowRepository : IFlowRepository {
+    public class FlowRepository : IFlowRepository {
 
         private readonly DataContext context;
 
+        public bool Add(Guid stateId, RegistrationFlow flow) {
+            throw new NotImplementedException();
+        }
+
+        public bool Delete(Guid idFlow) {
+            throw new NotImplementedException();
+        }
+
+        public IReadOnlyList<RegistrationFlow> GetAll() {
+            throw new NotImplementedException();
+        }
+
+        public RegistrationFlow GetById(Guid idFlow) {
+            throw new NotImplementedException();
+        }
+
+        public IReadOnlyList<RegistrationFlow> GetByName(string name) {
+            throw new NotImplementedException();
+        }
+
+        public bool Update(RegistrationFlow flow) {
+            throw new NotImplementedException();
+        }
     }
 }
